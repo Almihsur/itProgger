@@ -13,5 +13,12 @@ package itProger.Threads;
 // разделить строку по символу и далее получить массив элементов. В таком массиве каждый элемент можно будет вывести с новой строки.
 
 public class Task_3 {
-
+    public static void main(String[] args) {
+        GetUserInfo gu = new GetUserInfo();
+        gu.getInfo();
+        System.out.println(gu.toString());
+        //String gu = new String("bla bla");
+        SetObject su = new SetObject();
+        su.serialis(gu);
+    }
 }
